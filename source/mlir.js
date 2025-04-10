@@ -1264,7 +1264,11 @@ mlir.Parser = class {
     _parseType() {
         if (this._token.kind === 'id') {
             if (this._token.value === 'none' ||
+                this._token.value === 'ui32' ||
+                this._token.value === 'ui16' ||
+                this._token.value === 'ui64' ||
                 this._token.value === 'i32' ||
+                this._token.value === 'i16' ||
                 this._token.value === 'i64' ||
                 this._token.value === 'si64' ||
                 this._token.value === 'f32' ||
